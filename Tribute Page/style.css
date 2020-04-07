@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+#main{    
+    font-family: "Lato",sans-serif;
+}
+
+header{
+    height: 100vh;
+    background:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.4)),to(rgba(0,0,0,0.4))),url(/img/bg.jpg);
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/img/bg.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.hero{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 5%;
+    height: 10vh;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    align-content:center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    -webkit-transition: font-weight 300ms ease;
+    transition: font-weight 300ms ease;
+}
+
+.links:hover{
+    font-weight: bold;
+} 
+
+.logo{
+    font-size: 3rem;
+    text-transform: uppercase;
+        font-weight: bold;
+        align-self: center;
+}
+
+
+.nav-container li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+.highlight button{
+   background-color: rgba(255,255,255,0.3);
+   border: none;
+   padding: 1rem;
+   font-size: 2rem;
+   color: white;
+   border-radius: 10px;
+   -webkit-transition: all 300ms ease-in;
+   transition: all 300ms ease-in;
+}
+
+button:hover{
+    background-color: rgba(0,0,0,0.3);
+    border: 3px solid gray;
+}
+
+/* MAIN */
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    height: 90vh;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+}
+
+h2{
+    font-size: 6rem;
+    text-align: center;    
+    color: white;
+}
+
+h2::after{
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: white;
+    display: block;
+    margin: 1rem auto;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.quote{
+    margin-top: 3rem;
+    font-size:3rem;
+    font-style: italic;
+}
+
+.quote::before{
+    content: open-quote;
+}
+
+.quote::after{
+    content: close-quote;
+}
+
+
+/* SECTION INFO */
+
+section{
+    height: auto;
+    background: rgba(0,0,0);
+    padding: 2.5rem 0;
+}
+
+.life-info{
+    width: 90%;
+    margin: 0 auto;
+
+    display: -webkit-box;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    align-content: center;
+}
+
+.text{
+    font-size: 1.7rem;
+    color: white;
+    line-height: 1.5;
+    text-align: start;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.text:nth-of-type(3n)::first-letter{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 3px;
+}
+
+#img-div{
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#img-div img{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+#img-div figcaption{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    font-style: oblique;
+    text-align: center;
+}
+
+.two-images{
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.two-images img{
+    width: 60%;
+    
+}
+
+footer{
+    border-top:2px solid gray ;
+    text-align: center;
+    font-size: 2rem;
+    background: rgba(0,0,0);
+    padding:2rem;
+    color: white;
+}
+
+@media(max-width:660px){
+    header{
+        background-size:200% 100vh;
+        background-position: right;
+    }
+
+    html{
+        font-size: 45%;
+    }
+
+    .nav-container,
+    .hero div{
+        display: none;
+    }
+
+    .hero{
+        -webkit-box-pack: center;
+                justify-content: center;
+        background-color: black;
+        -webkit-box-align: center;
+                align-items: center;
+    }
+
+    .quote{
+        text-align: center;
+    }
+}
