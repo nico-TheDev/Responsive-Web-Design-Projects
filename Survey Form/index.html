@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nico Ignacio">
+    <meta name="description" content="Survey Form Project for FCC Responsive Web Design Course">
+
+    <title>Survery Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="all.js"></script>
+
+</head>
+<body>
+    <header>
+       
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Lorem ipsum dolor sit amet, molestiae quo odit enim aspernatur sit.</p>
+
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">
+                Full Name
+                <input id="name" type="text" required placeholder="Full Name">
+            </label>
+            
+            <div class="gender-status">
+                <p>Gender</p>
+                <label for="male">
+                    Male
+                    <input name="gender" type="radio" id="male" value="male">
+                </label>
+                <label for="female">
+                    Female
+                    <input name="gender" type="radio" id="female" value="female">
+                </label>
+
+                <p>Status</p>
+                <label for="single">
+                    Single
+                    <input name="status" type="checkbox" id="single" value="single">
+                </label>
+                <label for="married">
+                    Married
+                    <input name="status" type="checkbox" id="married" value="married">
+                </label>
+            </div>
+           
+
+            <label for="email" id="email-label">
+                Email
+                <input id="email" type="email"  placeholder="example@example.com" required>
+            </label>
+
+            <label for="number" id="number-label">
+                Age
+                <input id="number" type="number" placeholder="" min="18" max="60" placeholder="input your age">
+            </label>
+            
+            <label for="dropdown" id="number-label">
+                Hobbies
+                <select name="" id="dropdown">
+                    <option value="Coding">Coding</option>
+                    <option value="Eating">Eating</option>
+                    <option value="Playing">Playing Games</option>
+                    <option value="Drawing">Drawing</option>
+                </select>
+            </label>
+            
+            <label for="message">
+                Message
+                <textarea name="comment" id="message" cols="30" rows="10" placeholder="Input Message"></textarea>
+            </label>
+           
+            
+            <button id="submit">
+                Submit
+            </button>
+        </form>
+        <video src="./vid.mp4" autoplay loop muted class="bg-vid"></video>
+    </header>
+</body>
+</html>
