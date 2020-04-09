@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladning Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./img/all.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <img src="/img/logo.png" alt="" id="header-img">
+            <ul class="nav-links">
+                <li><a href="#showcase" class="nav-link">Features</a></li>
+                <li><a href="#showcase" class="nav-link">Learn More</a></li>
+                <li><a href="#buy-now" class="nav-link">Buy Now</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1 class="title-text">The Laptop that will make you smile!</h1>
+            <p class="subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita reiciendis modi natus
+                debitis? Rerum voluptates veritatis, ex magni enim impedit.</p>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <h2 class="title-text">Showcase</h2>
+        <div class="showcase-container">
+            <ul class="features">
+                <h2>FEATURES</h2>
+                <div class="subfeatures">
+                    <li>Lorem ipsum dolor sit amet Lorem ipsum dolor</li>
+                    <li>Lorem ipsum dolor sit amet Lorem ipsum dolor </li>
+                    <li>Lorem ipsum dolor sit amet Lo.</li>
+                    <li>Lorem ipsum dolor sit amet Lorem ipsum sit amet consect</li>
+                </div>
+            </ul>
+
+            <iframe id="video" src="https://www.youtube.com/embed/DoSBtwywius" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="buy-now">
+        <h2 class="title-text">PRICE</h2>
+
+        <div class="card-container">
+            <div class="card card1">
+                <i class="fas fa-wifi fa-4x"></i>
+                <h3 class="price">2nd Gen</h3>
+                <button class="btn">$1,299</button>
+            </div>
+
+            <div class="card card2">
+                <i class="fas fa-globe fa-4x"></i>
+                <h3 class="price">1st Gen</h3>
+                <button class="btn light">$999</button>
+            </div>
+
+            <div class="card card3">
+                <i class="fas fa-memory fa-4x"></i>
+                <h3 class="price">3rd Gen</h3>
+                <button class="btn">$599</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mail">
+        <h2 class="title-text">INTERESTED?</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" required id="email" placeholder="Drop your email here">
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p class="footer-note">
+            Created by Nico for FCC
+        </p>
+    </footer>
+</body>
+
+</html>

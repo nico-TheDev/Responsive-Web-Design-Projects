@@ -1,0 +1,270 @@
+:root{
+    --midnightblue:#2c3e50;
+    --asphalt:#34495e;
+    --darkgreen:#27ae60;
+    --green:#2ecc71;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3{
+    font-size: 3rem;
+    font-family: inherit;
+    color: inherit;
+}
+
+body{
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+
+/* HEADER */
+
+#header{
+    height: 100vh;
+    background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: var(--asphalt);
+    background-blend-mode: multiply;
+    
+}
+
+#nav-bar{
+    width: 90%;
+    height: 10vh;
+    padding: 0 5%;
+    background-color:var(--midnightblue);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img{
+    width: 120px;
+    filter: invert(1);
+}
+
+.nav-links li{
+    list-style-type:none;
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size:2rem;
+    text-transform: uppercase;
+}
+
+.hero{
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.title-text{
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.title-text::after{
+    content: "";
+    display: block;
+    margin: 2rem auto;
+    height: 5px;
+    background: white;
+    width: 100px;
+}
+
+.subtext{
+    width: 50%;
+    text-align: center;
+}
+
+/* SECTION */
+
+section{
+    padding: 10rem 5%;
+    height: max-content;
+    background: var(--midnightblue);
+}
+
+.showcase-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.features{
+    flex: 1 1 400px;
+    padding: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.features li{
+    list-style-type: square;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    padding: 1rem;
+}
+
+.features h2{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.subfeatures{
+    display: flex;
+    flex-direction: column;
+}
+
+#video{
+    flex-basis: 50%;
+    height: 350px;
+}
+
+/* CARD */
+
+#buy-now{
+    width: 100%;
+    padding: 4rem 0;
+    background-image: url(./img/showcase.jpg);
+    background-color: gray;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.card-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    justify-items: stretch;
+    text-align: center;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.card{
+    background-color: rgba(255,255,255,0.2);
+    height: 300px;
+    padding: 3rem 2rem;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+
+    border-radius: 10px;
+
+    align-items: center;
+}
+
+.price{
+    font-size: 4rem;
+}
+
+.btn{
+    font-size: 3rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 0;
+}
+
+.light{
+    background-color: rgba(0, 255, 0, 0.329);
+}
+
+.card2{
+    height: 400px;
+}
+
+/* FORM */
+
+#form{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email{
+    font-size: 2rem;
+    padding: 1rem;
+    width: 300px;
+}
+
+#submit{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: limegreen;
+    border: none;
+}
+
+/* FOOTER */
+
+footer{
+    height: 10vh;
+    border-top: 1px solid white;
+    background-color: var(--midnightblue);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-note{
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--midnightblue);
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width:768px){
+    html{font-size: 50%;}
+    .card2{height: 300px;}
+}
+
+@media(max-width:420px){
+    html{font-size: 45%;}
+    #nav-bar{
+        flex-direction: column;
+        height: 20vh;
+        justify-content: space-around;
+    }
+
+    .showcase-container{flex-wrap: wrap;justify-content: center;}
+   
+}
